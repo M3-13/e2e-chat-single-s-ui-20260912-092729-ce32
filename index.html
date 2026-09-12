@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trinkgeld-Rechner</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Trinkgeld-Rechner</h1>
+
+    <section class="inputs" aria-label="Eingaben">
+      <div class="field">
+        <label for="amount">Betrag in Euro</label>
+        <input type="text" id="amount" inputmode="decimal" placeholder="0,00" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="percent">Trinkgeld-Prozent</label>
+        <input type="text" id="percent" inputmode="decimal" placeholder="10" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="people">Personenzahl</label>
+        <input type="text" id="people" inputmode="numeric" placeholder="1" autocomplete="off" />
+      </div>
+    </section>
+
+    <section class="results card" aria-label="Ergebnis">
+      <div class="result-row">
+        <span class="result-label">Trinkgeld</span>
+        <span class="result-value" id="tip-value">–</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Gesamtsumme</span>
+        <span class="result-value" id="total-value">–</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Betrag pro Person</span>
+        <span class="result-value" id="per-person-value">–</span>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
